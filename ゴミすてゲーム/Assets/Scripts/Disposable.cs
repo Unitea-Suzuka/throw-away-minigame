@@ -19,6 +19,7 @@ public class Disposable : MonoBehaviour
         if (other.CompareTag("Garbage"))
         {
             Destroy(other.gameObject);
+            ScoreManager.Instance.AddScore(10);
         }
     }
 }

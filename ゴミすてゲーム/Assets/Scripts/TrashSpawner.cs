@@ -1,11 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class TrashSpawnerUI : MonoBehaviour
 {
-    public GameObject trashPrefab;           // UI用のImageプレハブ
-    public RectTransform spawnArea;          // ゴミを生成するUI領域
-    public float spawnInterval = 2f;         // 生成間隔（秒）
+    [SerializeField] private List<GameObject> trashPrefabs;           // UI用のImageプレハブ
+    [SerializeField] private RectTransform spawnArea;          // ゴミを生成するUI領域
+    [SerializeField] private float spawnInterval = 2f;         // 生成間隔（秒）
+    [SerializeField] private Transform trashParent;
 
     void Start()
     {
@@ -23,8 +25,10 @@ public class TrashSpawnerUI : MonoBehaviour
         Vector2 localPos = new Vector2(x, y);
 
         // ゴミを生成して親にセット
-        GameObject trash = Instantiate(trashPrefab, spawnArea);
+        int index = Random.Range(0, trashPrefabs.Count);
+        GameObject trash = Instantiate(trashPrefabs[index], spawnArea);
         RectTransform rt = trash.GetComponent<RectTransform>();
         rt.anchoredPosition = localPos;
+        //trash.transform.SetParent(trashParent,false);
     }
 }
