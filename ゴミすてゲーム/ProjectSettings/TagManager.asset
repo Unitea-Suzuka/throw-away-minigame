@@ -13,9 +13,9 @@ TagManager:
   - Water
   - UI
   - 
-  - 
-  - 
-  - 
+  - Movable
+  - Unmovable
+  - Background
   - 
   - 
   - 
@@ -41,6 +41,18 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 1808552869
+    locked: 0
+  - name: Background
+    uniqueID: 1684965091
+    locked: 0
+  - name: Unmovable
+    uniqueID: 454489033
+    locked: 0
+  - name: Movable
+    uniqueID: 973308927
     locked: 0
   m_RenderingLayers:
   - Default

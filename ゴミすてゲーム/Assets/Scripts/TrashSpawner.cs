@@ -2,12 +2,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-public class TrashSpawnerUI : MonoBehaviour
+public class TrashSpawner : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> trashPrefabs;           // UI用のImageプレハブ
-    [SerializeField] private RectTransform spawnArea;          // ゴミを生成するUI領域
-    [SerializeField] private float spawnInterval = 2f;         // 生成間隔（秒）
-    [SerializeField] private Transform trashParent;
+    [SerializeField] private List<GameObject> trashPrefabs;
+    [SerializeField] private float spawnInterval = 2f;
 
     void Start()
     {
@@ -16,19 +14,21 @@ public class TrashSpawnerUI : MonoBehaviour
 
     void SpawnTrash()
     {
-        // スポーンエリアのサイズを取得
-        Vector2 size = spawnArea.rect.size;
+        // Selct where to spawn
+        Vector3 randomViewportPos = new Vector3(
+            Random.Range(0f, 1f),
+            Random.Range(0f, 1f),
+            10f
+        );
 
-        // ランダムな位置（アンカー中心からの相対）を計算
-        float x = Random.Range(-size.x / 2f, size.x / 2f);
-        float y = Random.Range(-size.y / 2f, size.y / 2f);
-        Vector2 localPos = new Vector2(x, y);
+        Vector3 worldPos = Camera.main.ViewportToWorldPoint(randomViewportPos);
+        worldPos.z = 0f;
 
-        // ゴミを生成して親にセット
-        int index = Random.Range(0, trashPrefabs.Count);
-        GameObject trash = Instantiate(trashPrefabs[index], spawnArea);
-        RectTransform rt = trash.GetComponent<RectTransform>();
-        rt.anchoredPosition = localPos;
-        //trash.transform.SetParent(trashParent,false);
+        Vector3 spawnPos = worldPos;
+        
+        // Instantiate random trash
+        int randomIndex = Random.Range(0, trashPrefabs.Count);
+        GameObject randomTrash = trashPrefabs[randomIndex];
+        Instantiate(randomTrash, spawnPos, Quaternion.identity);
     }
 }
