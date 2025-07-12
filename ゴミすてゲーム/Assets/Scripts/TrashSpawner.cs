@@ -31,4 +31,9 @@ public class TrashSpawner : MonoBehaviour
         GameObject randomTrash = trashPrefabs[randomIndex];
         Instantiate(randomTrash, spawnPos, Quaternion.identity);
     }
+
+    public void CancelSpawn()
+    {
+        CancelInvoke(nameof(SpawnTrash));
+    }
 }

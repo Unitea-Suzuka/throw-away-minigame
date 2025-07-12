@@ -32,4 +32,9 @@ public class ScoreManager : MonoBehaviour {
         scoreText.text =  score.ToString();
     }
 
+    public int GetScore()
+    {
+        return score;
+    }
+
 }

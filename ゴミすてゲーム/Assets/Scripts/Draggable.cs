@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Draggable : MonoBehaviour
 {
+    public static bool isDragEnable = true;
     private bool isDragging = false;
     private float distance;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -15,6 +16,10 @@ public class Draggable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!isDragEnable)
+        {
+            return;
+        }
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
