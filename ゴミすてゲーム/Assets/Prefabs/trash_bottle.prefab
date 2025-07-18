@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 629138936313631326}
   m_Layer: 0
   m_Name: trash_bottle
-  m_TagString: Garbage
+  m_TagString: bottle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

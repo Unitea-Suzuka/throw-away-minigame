@@ -16,10 +16,26 @@ public class Disposable : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Garbage"))
+        Destroy(other.gameObject);
+        if (other.CompareTag("bottle"))
         {
-            Destroy(other.gameObject);
             ScoreManager.Instance.AddScore(10);
+            SEManager.instance.PlaySE("決定ボタンを押す44");
+        }
+        else if (other.CompareTag("can"))
+        {
+            ScoreManager.Instance.AddScore(10);
+            SEManager.instance.PlaySE("決定ボタンを押す44");
+        }
+        else if (other.CompareTag("paper"))
+        {
+            ScoreManager.Instance.AddScore(10);
+            SEManager.instance.PlaySE("決定ボタンを押す44");
+        }
+        else if (other.CompareTag("smoke"))
+        {
+            ScoreManager.Instance.AddScore(25);
+            SEManager.instance.PlaySE("決定ボタンを押す46");
         }
     }
 }

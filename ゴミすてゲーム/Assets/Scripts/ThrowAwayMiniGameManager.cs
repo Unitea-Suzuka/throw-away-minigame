@@ -12,6 +12,7 @@ public class ThrowAwayMiniGameManager : MonoBehaviour
     {
         resultModal.SetActive(false);
         InteractionBlocker.SetActive(false);
+        BGMManager.instance.PlayBGM("ê¬ãÛãÛç`");
     }
 
     // Update is called once per frame
@@ -31,6 +32,7 @@ public class ThrowAwayMiniGameManager : MonoBehaviour
         trashSpawner.CancelSpawn();
         ShowResultModal();
         Draggable.isDragEnable = false;
+        BGMManager.instance.StopBGM();
     }
 
     private void ShowResultModal()
