@@ -2,6 +2,13 @@ using UnityEngine;
 
 public class Disposable : MonoBehaviour
 {
+    public GameObject effectPrefab;
+    public Transform spawnPoint;
+
+    private void SpawnEffect()
+    {
+       Instantiate (effectPrefab,spawnPoint.position,spawnPoint.rotation);
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -36,6 +43,7 @@ public class Disposable : MonoBehaviour
         {
             ScoreManager.Instance.AddScore(25);
             SEManager.instance.PlaySE("Œˆ’èƒ{ƒ^ƒ“‚ð‰Ÿ‚·46");
+            SpawnEffect();
         }
     }
 }

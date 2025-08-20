@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 30b0984fff52a5642935f10832bd7a0c
+guid: 404984bae6292e545bcdfaca84ebd5ac
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4849059034234041994
-    second: waste-paper_03-520x520_0
+      213: -7015954771966046480
+    second: trash_pepar_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: waste-paper_03-520x520_0
+      name: trash_pepar_0
       rect:
         serializedVersion: 2
-        x: 86
-        y: 96
-        width: 348
-        height: 329
+        x: 166
+        y: 222
+        width: 908
+        height: 877
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a863b6e00815b4340800000000000000
-      internalID: 4849059034234041994
+      spriteID: 0fec1c89e4252ae90800000000000000
+      internalID: -7015954771966046480
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      waste-paper_03-520x520_0: 4849059034234041994
+      trash_pepar_0: -7015954771966046480
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

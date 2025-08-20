@@ -58,6 +58,9 @@ TagManager:
   - name: Blocker
     uniqueID: 2932534927
     locked: 0
+  - name: Effect
+    uniqueID: 2684549407
+    locked: 0
   - name: UI
     uniqueID: 1808552869
     locked: 0

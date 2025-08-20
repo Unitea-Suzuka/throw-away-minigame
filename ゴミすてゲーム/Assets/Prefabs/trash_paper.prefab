@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5261444876093428432}
   - component: {fileID: 6509199631773197166}
   - component: {fileID: 7454360707441490719}
-  - component: {fileID: 5172802274665185003}
+  - component: {fileID: 4879210513503789612}
   m_Layer: 0
   m_Name: trash_paper
   m_TagString: paper
@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 3196579593708493606}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 59.3, y: -8.1, z: 0}
-  m_LocalScale: {x: 2.7003782, y: 2.797008, z: 1}
+  m_LocalPosition: {x: 26.88, y: -10.2578, z: 0}
+  m_LocalScale: {x: 1.3216277, y: 1.3322008, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,12 +79,12 @@ SpriteRenderer:
   m_SortingLayerID: 973308927
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4849059034234041994, guid: 30b0984fff52a5642935f10832bd7a0c, type: 3}
+  m_Sprite: {fileID: -7015954771966046480, guid: 404984bae6292e545bcdfaca84ebd5ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.75, y: 3}
+  m_Size: {x: 9.08, y: 8.77}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -129,8 +129,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &5172802274665185003
-BoxCollider2D:
+--- !u!58 &4879210513503789612
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -164,14 +164,4 @@ BoxCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.48, y: 3.29}
-    newSize: {x: 1.75, y: 3}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 3.48, y: 3.29}
-  m_EdgeRadius: 0
+  m_Radius: 4.54

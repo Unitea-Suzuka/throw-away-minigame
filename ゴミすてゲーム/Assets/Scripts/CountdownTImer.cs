@@ -11,6 +11,7 @@ public class CountdownTimer : MonoBehaviour
 
     private float remainingTime;
     private bool isRunning = true;
+    private float clockRatio = 0;
 
     void Start()
     {
@@ -54,5 +55,4 @@ public class CountdownTimer : MonoBehaviour
         Debug.Log("Time's up!");
         throwAwayMiniGameManager.GameOver();
     }
-
 }
