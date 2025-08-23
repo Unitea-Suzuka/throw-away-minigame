@@ -23,6 +23,13 @@ public class Disposable : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        SpriteRenderer sr = other.GetComponent<SpriteRenderer>();
+        if (sr != null)
+        {
+            Sprite sprite = sr.sprite;
+            ThrowAwayMiniGameManager.AddTrash(sprite);
+        }
+
         Destroy(other.gameObject);
         if (other.CompareTag("bottle"))
         {

@@ -23,7 +23,6 @@ public class CountdownTimer : MonoBehaviour
     {
         if (isRunning)
         {
-            Debug.Log("isRunning");
             remainingTime -= Time.deltaTime;
             UpdateTimerUI();
             if (remainingTime <= 0f)
@@ -32,13 +31,11 @@ public class CountdownTimer : MonoBehaviour
                 isRunning = false;
                 UpdateTimerUI();
                 GameOver();
-                Debug.Log("GameOver");
             }
            
         }
         else
         {
-            Debug.Log("isnotRunning");
             UpdateTimerUI();
         }
     }
