@@ -12,3 +12,5 @@
 スポーンするゴミをドラッグ＆ドロップしてゴミ箱に入れる
 <img width="1016" height="694" alt="image-2" src="https://github.com/user-attachments/assets/f7b19668-94d5-41c4-aceb-bb24b3c2b200" />
 
+## 外部パッケージ
+- [ParticleEffectForUGUI](https://github.com/mobsakai/ParticleEffectForUGUI)
