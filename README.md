@@ -13,7 +13,7 @@
 
 <img width="1016" height="694" alt="image-2" src="https://github.com/user-attachments/assets/f7b19668-94d5-41c4-aceb-bb24b3c2b200" />
 
-<img width="508" height="347" alt="imageresurt" src="https://github.com/user-attachments/assets/dedc8a8c-6658-40ee-9336-64783455250b" />
+<img width="1016" height="694" alt="imageresurt" src="https://github.com/user-attachments/assets/dedc8a8c-6658-40ee-9336-64783455250b" />
 
 
 2. 一定時間経つとリザルト画面が表示される。スコアは制限時間内に入れたゴミの量によって決まる
